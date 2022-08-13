@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -60,6 +60,9 @@ header .header-links:hover{
   background-color: #319197;
 }
 
+header .header-links:first-child:hover{
+  color: #f9fcfc;
+}
 
 .main-1 {
 display: flex;
@@ -83,7 +86,7 @@ cursor: pointer;
 .m-text{
 display: flex;
 align-items: center;
-gap: 0 10px;
+gap: 0 3%;
 overflow: hidden;
                 }
 
@@ -284,9 +287,11 @@ color: #c0f2f2;
     max-width: 155px;
     width: unset;
   }
+  header .header-links{
+padding: 12px 15px;
+  }
   header .header-links:nth-child(1){
     text-align: center;
-    padding: 6px 12px;
     font-weight: 400;
     font-size: 1rem;
     background-color: transparent;
@@ -294,8 +299,7 @@ color: #c0f2f2;
   }
   header .header-links:nth-child(2){
     text-align: center;
-    max-width: 84px;
-    padding: 6px 12px;
+    max-width: 86px;
     font-weight: 400;
     font-size: 1rem;
     margin-right: 10px;
@@ -305,8 +309,8 @@ color: #c0f2f2;
   }
 
   .angle-left, .angle-right{
-    max-height: 24px;
-    max-width: 24px;
+    height: 30px;
+    width: 30px;
     margin-top: 20px;
   }
   .angle-left .arrow, .angle-right .arrow{
@@ -318,7 +322,7 @@ color: #c0f2f2;
   .m-text-1 h2, .m-text-2 h2{
     font-weight: 500;
     font-size: 1.5rem;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
   }
   .m-text-1 p, .m-text-2 p{
   font-weight: 400;
@@ -326,7 +330,7 @@ color: #c0f2f2;
   line-height: 19px;
   }
   .m-text-1, .m-text-2{
-    padding: 10px 5px;
+    padding: 10px 7px;
     max-width: 241px;
 
   }
@@ -337,12 +341,12 @@ color: #c0f2f2;
     margin:24px auto 0 ;
   }
   .main-1{
-    padding: 16px 0;
     justify-content: center;
-    padding: 10px 24px;
+    padding: 10px 3%;
     margin: 24px auto;
     align-items: flex-start;
     width: 100%;
+    gap: 3%;
   }
   /* 24px margin all subelements */
   .container-1{
@@ -384,8 +388,9 @@ color: #c0f2f2;
   }
 
   .container-3{
-    padding: 5px 16px;
-    margin: 0 24px;
+    padding: 5px 3%;
+    margin: 0 auto;
+    width: 100%;
   }
   .container-3 h2{
     font-size: 1rem;
@@ -393,13 +398,14 @@ color: #c0f2f2;
   }
   .container-3 .fig-cont{
     margin:0 auto 16px;
-    width: 80%;
+    width: 95%;
     max-width: 320px;
-    gap: 21px;
+    gap: 7%;
   }
   .container-3 .fig-cont figure img{
     height: 36px;
     width: 36px;
+    margin: 0 auto 16px;
   }
   .container-3 .fig-cont figure figcaption{
     font-size: 1rem;
@@ -419,6 +425,7 @@ color: #c0f2f2;
   font-size: 0.75rem;
   line-height: 19px;
   max-width: 407px;
+  padding: 5px 10px;
 }
 footer{
   padding: 16px;
